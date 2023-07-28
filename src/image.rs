@@ -975,8 +975,8 @@ pub struct ErrorDetail {
 
 #[derive(Serialize, Deserialize, Debug)]
 pub struct ProgressDetail {
-    current: Option<u64>,
-    total: Option<u64>,
+    pub current: Option<u64>,
+    pub total: Option<u64>,
 }
 
 #[cfg(test)]
